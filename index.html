@@ -8,40 +8,67 @@
   
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-  Your Result
-  76
-  of 100
+  <div class="upperPart">
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
+    <h3>Your Result</h3>
+    <div class="circle">
+      <h1>76</h1>
+      <p>of 100</p>
+    </div>
+    <h2>Great</h2>
+    <p>You scored higher than 65% of the people who have taken these tests.</p>
+
+  </div>
+
+  <div class="lowerPart">
   
-  Summary
+    <h3>Summary</h3>
 
-  Reaction
-  80 / 100
+    <div class="reaction panel">
 
-  Memory
-  92 / 100
+      <p><b><img src="assets/images/icon-reaction.svg" alt="Reaction"> Reaction</b></p>
+      <p class="gray"><b>80</b> / 100</p>
 
-  Verbal
-  61 / 100
+    </div>
 
-  Visual
-  72 / 100
+    <div class="memory panel">
 
-  Continue
+      <p><b><img src="assets/images/icon-memory.svg" alt="Memory"> Memory</b></p>
+      <p class="gray"><b>92</b> / 100</p>
+
+    </div>
+
+    <div class="verbal panel">
+
+      <p><b><img src="assets/images/icon-verbal.svg" alt="Verbal"> Verbal</b></p>
+      <p class="gray"><b>61</b> / 100</p>
+
+    </div>
+
+    <div class="visual panel">
+
+      <p><b><img src="assets/images/icon-visual.svg" alt="Visual"> Visual</b></p>
+      <p class="gray"><b>72</b> / 100</p>
+
+    </div>
+
+    <a href="#">Continue</a>
+
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="mailto:lucie.buckova@gmail.com">Lucie Buckova</a>.
   </div>
+
 </body>
 </html>
