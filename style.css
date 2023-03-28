@@ -8,6 +8,8 @@ body {
     padding: 0;
 }
 
+/* violet part of the card */
+
 .upperPart {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     color: hsl(0, 0%, 100%);
@@ -15,17 +17,13 @@ body {
     border-radius: 0 0 20px 20px;
 }
 
-.upperPart h2 {
-    text-align: center;
-    margin-bottom: 0.5em;
-}
-
-.upperPart h3,
-.upperPart p {
+.result {
     text-align: center;
     color: hsl(241, 100%, 89%);
     margin-top: 0;
 }
+
+/* circle with points */
 
 .circle {
     display: flex;
@@ -39,20 +37,42 @@ body {
     text-align: center;
 }
 
-.circle h1,
-.circle p {
+.points {
+    font-size: 3em;
+    font-weight: 800;
     margin: 0;
 }
 
-.circle h1 {
-    font-size: 3em;
+.of100 {
+    margin: 0;
+    color: hsl(241, 100%, 89%);
+} 
+
+/* violet part under the circle */
+
+.great {
+    text-align: center;
+    margin: 0 0 0.5em 0;
+    font-size: 1.25em;
+    font-weight: 500;
 }
 
-.lowerPart {
-    padding: 1em;
+.status {
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+    margin-top: 0;
 }
-.lowerPart h3 {
+
+/* white part of the card */
+
+.lowerPart {
+    padding: 1em 1.5em;
+}
+
+.summary {
     color: hsl(224, 30%, 27%);
+    font-weight: 700;
+    margin-top: 0;
 }
 
 .panel {
@@ -64,7 +84,16 @@ body {
     text-align: center;
 }
 
-.panel p {
+.heading {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    font-weight: 700;
+    margin: 0;
+}
+
+.heading p,
+.gray {
     margin: 0;
 }
 
@@ -89,19 +118,42 @@ body {
 }
 
 .gray {
+    display: flex;
+    gap: 0.5em;
     color: hsl(224, 30%, 27%);
 }
 
-.lowerPart a {
+.reachedPoints {
+    font-weight: 800;
+    margin: 0;
+}
+
+.totalPoints {
+    color: hsla(224, 30%, 27%, 0.5);
+    font-weight: 700;
+    margin: 0;
+}
+
+/* continue button */
+
+.continue {
     display: block;
     background-color: hsl(224, 30%, 27%);
     padding: 1em 2em;
-    margin: 1em auto;
+    margin: 1.25em auto;
     border-radius: 30px;
     text-align: center;
     text-decoration: none;
     color: hsl(0, 0%, 100%);
 }
+
+.continue:hover,
+.continue:focus {
+    background-color: hsl(234, 85%, 45%);
+    font-weight: 800;
+}
+
+/* footer section */
 
 .attribution { 
     font-size: 0.611em; 
